@@ -1,4 +1,6 @@
-## 戈多大战项目结构
+ps:该项目仅作为git测试上传使用
+ps:This project is used to test git
+## 戈多大战文档
 * scenes
     * main 主页面
     * game 游戏界面
