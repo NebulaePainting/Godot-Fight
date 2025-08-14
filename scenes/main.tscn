@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8dycb3x8mt6g"]
+
+[ext_resource type="Script" uid="uid://crjijim8fskp5" path="res://scripts/start.gd" id="1_o5qli"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_sgp6g"]
+font_size = 141
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 0
+offset_left = 292.0
+offset_top = 134.0
+offset_right = 856.0
+offset_bottom = 327.0
+text = "戈多大战"
+label_settings = SubResource("LabelSettings_sgp6g")
+
+[node name="Start" type="Button" parent="."]
+layout_mode = 0
+offset_left = 453.0
+offset_top = 402.0
+offset_right = 713.0
+offset_bottom = 500.0
+theme_override_font_sizes/font_size = 36
+text = "那很好了"
+script = ExtResource("1_o5qli")
+
+[connection signal="pressed" from="Start" to="Start" method="_on_pressed"]

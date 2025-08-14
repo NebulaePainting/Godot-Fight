@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://3yyqm3k7akkn"]
+
+[ext_resource type="Script" uid="uid://cosb6ynbwhnkv" path="res://scripts/game_over_hub.gd" id="1_ledgg"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_g1xub"]
+font_size = 91
+
+[sub_resource type="LabelSettings" id="LabelSettings_ledgg"]
+font_size = 73
+
+[node name="GameOverHub" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_ledgg")
+
+[node name="GameOverText" type="Label" parent="."]
+layout_mode = 0
+offset_left = 362.0
+offset_top = 68.0
+offset_right = 817.0
+offset_bottom = 193.0
+text = "游戏结束！"
+label_settings = SubResource("LabelSettings_g1xub")
+
+[node name="FinalScore" type="Label" parent="." groups=["mob"]]
+layout_mode = 0
+offset_left = 118.0
+offset_top = 259.0
+offset_right = 483.0
+offset_bottom = 372.0
+text = "Final Score："
+label_settings = SubResource("LabelSettings_ledgg")
+
+[node name="Back" type="Button" parent="."]
+layout_mode = 0
+offset_left = 723.0
+offset_top = 429.0
+offset_right = 957.0
+offset_bottom = 527.0
+theme_override_font_sizes/font_size = 31
+text = "返回"
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
