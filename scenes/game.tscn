@@ -43,7 +43,7 @@ shape = SubResource("SegmentShape2D_uwrxv")
 [node name="Bullets" type="Node2D" parent="."]
 
 [node name="Player" parent="." instance=ExtResource("1_uwrxv")]
-position = Vector2(85, 324)
+position = Vector2(212, 89)
 speed = 200
 
 [node name="Mobs" type="Node2D" parent="."]
